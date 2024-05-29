@@ -6,14 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { PanelModule } from 'primeng/panel';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
+import { CoreModule } from './core/core.module';
+import { ShopModule } from './shop/shop.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +22,9 @@ import { ButtonModule } from 'primeng/button';
     PanelModule,
     MenubarModule,
     ButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    CoreModule,
+    ShopModule
   ],
   providers: [
     provideClientHydration()
