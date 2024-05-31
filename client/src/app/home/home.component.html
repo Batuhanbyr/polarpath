@@ -1,1 +1,30 @@
-<p>home works!</p>
+<section class="home-section">
+  <div class="container">
+    <div class="row">
+      <div class="col slider">
+        <div class="slides">
+          <img src="https://picsum.photos/id/29/5000/5000" class="slide" alt="Slide 1">
+          <img src="https://picsum.photos/id/235/5000/5000" class="slide" alt="Slide 2">
+          <img src="https://picsum.photos/id/296/5000/5000" class="slide" alt="Slide 3">
+        </div>
+      </div>
+      <div class="col welcome-section">
+        <h1 style="margin-top: 90px;">Welcome to the PolarPath</h1>
+        <p>Welcome to our ski shop! Whether you're a seasoned pro or hitting the slopes for the first time,
+          we have everything you need to make your ski trip unforgettable. From high-quality skis and snowboards
+          to the latest in winter apparel, our selection of hats, gloves, and accessories ensures you stay warm
+          and stylish.</p>
+        <div class="weather-section">
+          <h2>Current Weather in Top Ski Locations</h2>
+          <div class="weather-slider">
+            <div class="weather-info" *ngFor="let weather of weatherData">
+              <p><strong>Location:</strong> {{ weather.location }}</p>
+              <p><strong>Temperature:</strong> {{ weather.temperature }}</p>
+              <p><strong>Condition:</strong> {{ weather.condition }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
