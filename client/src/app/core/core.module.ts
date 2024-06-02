@@ -11,6 +11,7 @@ import { BreadcrumbComponent, BreadcrumbItemDirective } from 'xng-breadcrumb';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -32,14 +33,15 @@ import {ProgressSpinnerModule} from 'primeng/progressspinner';
     BreadcrumbItemDirective,
     NgxSpinnerModule,
     BrowserAnimationsModule,
-    ProgressSpinnerModule
+    ProgressSpinnerModule,
+    SharedModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   exports: [
     NavBarComponent,
     SectionHeaderComponent,
     ProgressSpinnerModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
   ],
 })
 export class CoreModule { }
